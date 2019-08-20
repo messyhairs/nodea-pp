@@ -14,10 +14,11 @@ let customerRouter = require('./app/routes/customer.routes.js');
 app.use('/', customerRouter);
 
 // Create a Server
-let server = app.listen(8080, function () {
+// let server = app.listen(8080, function () {
  
-  let host = server.address().address
-  let port = server.address().port
+//   let host = server.address().address
+//   let port = server.address().port
  
-  console.log("App listening at http://%s:%s", host, port)
-})
+//   console.log("App listening at http://%s:%s", host, port)
+// })
+app.listen(process.env.PORT, '0.0.0.0');

@@ -5,7 +5,7 @@ app.use(bodyParser.json())
 
 const cors = require('cors')
 const corsOptions = {
-  origin:'https://nodedemo-f1fe0.web.app/customers',
+  origin:'https://nodedemo-f1fe0.web.app',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions))
